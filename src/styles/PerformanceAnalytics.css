@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+  }
+  .analytics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffcc00;  /* Yellow */
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .analytics-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analytics-card h2 {
+    color: #ffcc00;  /* Yellow */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .analytics-card p {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+  }
+  
