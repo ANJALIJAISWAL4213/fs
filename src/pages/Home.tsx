@@ -19,24 +19,28 @@ const Home: React.FC = () => {
       description:
         'Upload email lists in bulk via CSV/Excel. Organize and categorize contacts. Detect duplicates and invalid emails.',
       icon: 'https://via.placeholder.com/80',
+      link:""
     },
     {
       title: 'Email Campaign Automation',
       description:
         'Create custom email templates. Schedule automated email dispatch and set follow-up sequences for non-responders.',
       icon: 'https://via.placeholder.com/80',
+      link:"/campaignautomation"
     },
     {
       title: 'Personalization',
       description:
         'Use placeholders for personalized content. Add attachments like sponsorship proposals or brochures.',
       icon: 'https://via.placeholder.com/80',
+      link:""
     },
     {
       title: 'Performance Analytics',
       description:
         'Track open rates, click-through rates, and response rates. Monitor bounce rates and manage unsubscribes.',
       icon: 'https://via.placeholder.com/80',
+      link:"/analytics"
     },
     {
       title: 'Integration Capabilities',
@@ -49,18 +53,21 @@ const Home: React.FC = () => {
       description:
         'GDPR and CAN-SPAM compliant features. Ensure opt-out options and sender verification.',
       icon: 'https://via.placeholder.com/80',
+      link:""
     },
     {
       title: 'Collaboration Tools',
       description:
         'Multi-user access for teams. Assign tasks and follow up on specific contacts.',
       icon: 'https://via.placeholder.com/80',
+      link:""
     },
     {
       title: 'Templates & Insights',
       description:
         'Pre-designed templates for sponsorship requests. Insights on email timing and outreach improvement.',
       icon: 'https://via.placeholder.com/80',
+      link:""
     },
   ];
 
@@ -69,6 +76,16 @@ const Home: React.FC = () => {
   <header className="main-header">
     <h1>Sponsorship Platform</h1>
     <p>Effortlessly manage email campaigns and maximize sponsorship opportunities.</p>
+    <div className="button-container">
+  <Link to="/login">
+    <button className="cta-button">LOGIN</button>
+  </Link>
+  <br />
+  <Link to="/signup">
+    <button className="cta-button">SIGN UP</button>
+  </Link>
+</div>
+
   </header>
 
   <div className="background-wrapper">
@@ -89,16 +106,19 @@ const Home: React.FC = () => {
     <section id="features" className="features">
       <h2>Core Features</h2>
       <div className="features-grid">
-        {features.map((feature, index) => (
-          <div key={index} className="feature-card">
-            <img src={mi} alt={`${feature.title} Icon`} />
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
-            <Link to="/personalization">
-              <button className="cta-button">Learn More</button>
-            </Link>
-          </div>
-        ))}
+      {features.map((feature, index) => (
+  <div key={index} className="feature-card">
+    <img src={mi} alt={`${feature.title} Icon`} />
+    <h3>{feature.title}</h3>
+    <p>{feature.description}</p>
+    {feature.link && (
+      <Link to={feature.link}>
+        <button className="cta-button">Learn More</button>
+      </Link>
+    )}
+  </div>
+))}
+
       </div>
     </section>
   </div>
