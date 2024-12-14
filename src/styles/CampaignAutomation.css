@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Use a sleek modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark background for classy look */
+  color: #f1f1f1; /* Light text for contrast */
+}
+
+.campaign-container {
+  width: 70%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffcc00; /* Golden Yellow */
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.campaign-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+}
+
+textarea,
+input[type="datetime-local"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+textarea {
+  height: 180px;
+}
+
+input[type="number"] {
+  max-width: 120px;
+}
+
+textarea:focus,
+input[type="datetime-local"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #ffcc00; /* Golden Yellow on focus */
+}
+
+button.submit-btn {
+  padding: 12px 25px;
+  background-color: #ffcc00; /* Golden Yellow */
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button.submit-btn:hover {
+  background-color: #e6b800; /* Darker Yellow */
+  transform: translateY(-2px); /* Slight elevation effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .campaign-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+}
+
+/* Footer Styling */
+.main-footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.875rem;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center; /* Align checkbox and label horizontally */
+  gap: 10px; /* Space between checkbox and label */
+}
+
+/* Adjust checkbox input alignment */
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+}
+
+/* Label styles for the checkbox */
+label.checkbox-label {
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Styles for the rest of the form group */
+label {
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+}
