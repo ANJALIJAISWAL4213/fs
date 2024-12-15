@@ -73,20 +73,23 @@ const Home: React.FC = () => {
 
   return (
     <>
-  <header className="main-header">
-    <h1>Sponsorship Platform</h1>
-    <p>Effortlessly manage email campaigns and maximize sponsorship opportunities.</p>
+<header className="main-header">
+  <div className="header-container">
+    <div className="header-title">
+      <h1>Sponsorship Platform</h1>
+      <p>Effortlessly manage email campaigns and maximize sponsorship opportunities.</p>
+    </div>
     <div className="button-container">
-  <Link to="/login">
-    <button className="cta-button">LOGIN</button>
-  </Link>
-  <br />
-  <Link to="/signup">
-    <button className="cta-button">SIGN UP</button>
-  </Link>
-</div>
+      <Link to="/login">
+        <button className="cta-button">LOGIN</button>
+      </Link>
+      <Link to="/signup">
+        <button className="cta-button">SIGN UP</button>
+      </Link>
+    </div>
+  </div>
+</header>
 
-  </header>
 
   <div className="background-wrapper">
     <section id="hero" className="hero">
