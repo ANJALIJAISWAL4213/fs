@@ -17,6 +17,9 @@ h1, h2, h3 {
   background-color: black;
   color: #e7b717;
 }
+.main-header h1 {
+  color: #e7b717; /* Ensures the heading is yellow */
+}
 
 .main-header p {
   margin-top: 0.5rem;
@@ -152,4 +155,20 @@ h1, h2, h3 {
   padding: 1.5rem;
   background-color: black;
   color: #e7b717;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  transform: translate(1050px,-150px);  
+}
+
+.cta-button {
+  padding: 10px 20px; /* Optional: for button styling */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
